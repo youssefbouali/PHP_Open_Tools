@@ -2,7 +2,7 @@
 
 /*!
  * Browser & System Fetcher
- * https://bouali.ml/
+ * https://github.com/youssefbouali/PHP_Open_Tools/master/browser_system_fetcher.php
  *
  * Copyright (c) Bouali
  * Released under the MIT license
@@ -97,22 +97,22 @@ function getBrowser($user_agent) {
     $browser = "Unknown Browser";
 
 	$browser_array = array(
-						'/msie/i'           => 'Internet Explorer',
-						'/firefox/i'        => 'Firefox',
+			'/msie/i'           => 'Internet Explorer',
+			'/firefox/i'        => 'Firefox',
                         '/safari/i'         => 'Safari',
-						'/mobile/i'         => 'Handheld Browser',
+			'/mobile/i'         => 'Handheld Browser',
                         '/chrome/i'         => 'Chrome',
-						'/SamsungBrowser/i' => 'Samsung Browser',
-						'/UCBrowser/i'      => 'UC Browser',
-						'/YaBrowser/i'      => 'Yandex Browser',
+			'/SamsungBrowser/i' => 'Samsung Browser',
+			'/UCBrowser/i'      => 'UC Browser',
+			'/YaBrowser/i'      => 'Yandex Browser',
                         '/edge/i'           => 'Edge',
                         '/opera/i'          => 'Opera',
                         '/netscape/i'       => 'Netscape',
                         '/maxthon/i'        => 'Maxthon',
                         '/konqueror/i'      => 'Konqueror',
-						'/Googlebot/i'      =>  'Googlebot',//Chrome
-						'/facebookexternalhit/i'=>  'Facebookbot',
-						);
+			'/Googlebot/i'      =>  'Googlebot',//Chrome
+			'/facebookexternalhit/i'=>  'Facebookbot',
+			);
 
     foreach ($browser_array as $regex => $value){
         if (preg_match($regex, $user_agent)){
@@ -134,6 +134,6 @@ $user_browser = getBrowser($user_agent);
 echo "<strong>Operating System: </strong>".$user_os."<br /><strong>Browser: </strong>".$user_browser;
 
 
-echo ."<br /><strong>HTTP USER_AGENT: </strong>".$user_agent;
+echo "<br /><strong>HTTP USER_AGENT: </strong>".$user_agent;
 
 ?>
