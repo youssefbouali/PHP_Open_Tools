@@ -97,22 +97,22 @@ function getBrowser($user_agent) {
     $browser = "Unknown Browser";
 
 	$browser_array = array(
-						'/msie/i'           => 'Internet Explorer',
-						'/firefox/i'        => 'Firefox',
+			'/msie/i'           => 'Internet Explorer',
+			'/firefox/i'        => 'Firefox',
                         '/safari/i'         => 'Safari',
-						'/mobile/i'         => 'Handheld Browser',
+			'/mobile/i'         => 'Handheld Browser',
                         '/chrome/i'         => 'Chrome',
-						'/SamsungBrowser/i' => 'Samsung Browser',
-						'/UCBrowser/i'      => 'UC Browser',
-						'/YaBrowser/i'      => 'Yandex Browser',
+			'/SamsungBrowser/i' => 'Samsung Browser',
+			'/UCBrowser/i'      => 'UC Browser',
+			'/YaBrowser/i'      => 'Yandex Browser',
                         '/edge/i'           => 'Edge',
                         '/opera/i'          => 'Opera',
                         '/netscape/i'       => 'Netscape',
                         '/maxthon/i'        => 'Maxthon',
                         '/konqueror/i'      => 'Konqueror',
-						'/Googlebot/i'      =>  'Googlebot',//Chrome
-						'/facebookexternalhit/i'=>  'Facebookbot',
-						);
+			'/Googlebot/i'      =>  'Googlebot',//Chrome
+			'/facebookexternalhit/i'=>  'Facebookbot',
+			);
 
     foreach ($browser_array as $regex => $value){
         if (preg_match($regex, $user_agent)){
