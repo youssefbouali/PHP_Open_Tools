@@ -37,9 +37,11 @@ function getOS($user_agent) {
 					'/iphone/i'             =>  'iPhone',
 					'/ipod/i'               =>  'iPod',
 					'/ipad/i'               =>  'iPad',
-					/*'/android/i'            =>  'Android',*/
 					
 					
+					'/android/i'            =>  'Android',
+					'/android 11/i'         =>  'Android 11 R',
+					'/android 10/i'         =>  'Android 10 Q',
 					'/android 9/i'          =>  'Android 9 Pie',
 					'/android 8/i'          =>  'Android 8 Oreo',
 					
