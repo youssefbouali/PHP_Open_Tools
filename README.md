@@ -5,7 +5,7 @@
   
    Copyright (c) Bouali
    Released under the MIT license
-   https://bouali.ml/
+   https://bouali.wsoum.eu.org/
   
    Date: 2020-01-16 22:42 GMT+1
 
